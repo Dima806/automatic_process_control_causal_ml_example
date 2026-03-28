@@ -1,0 +1,115 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "process_data_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {"column": "batch_id"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {"column": "timestamp"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {"column": "catalyst_type"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {"column": "coolant_flow_rate"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {"column": "reactor_temp"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {"column": "pressure"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {"column": "ph_level"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {"column": "reaction_rate"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {"column": "product_yield"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {"column": "anomaly_flag"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {"column": "product_yield", "min_value": 50, "max_value": 120},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {"column": "reactor_temp", "min_value": 150, "max_value": 210},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {"column": "pressure", "min_value": 2.0, "max_value": 4.0},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {"column": "ph_level", "min_value": 5.5, "max_value": 8.5},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {"column": "catalyst_type", "value_set": ["A", "B", "C"]},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {"column": "product_yield"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {"column": "reactor_temp"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {"column": "pressure"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {"column": "ph_level"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {"column": "reaction_rate"},
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {"column": "coolant_flow_rate"},
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.18.0"
+  }
+}

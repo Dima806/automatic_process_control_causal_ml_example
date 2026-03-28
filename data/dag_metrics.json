@@ -1,0 +1,9 @@
+{
+  "shd": 11,
+  "missing_edges": 7,
+  "extra_edges": 3,
+  "reversed_edges": 1,
+  "true_positive_edges": 3,
+  "precision": 0.42857142857142855,
+  "recall": 0.2727272727272727
+}

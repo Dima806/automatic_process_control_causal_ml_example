@@ -1,0 +1,44 @@
+simulation:
+  n_batches: 50000
+  anomaly_fraction: 0.05
+  random_seed: 42
+  catalyst_types:
+    - "A"
+    - "B"
+    - "C"
+  catalyst_temp_effects:
+    A: 0.0
+    B: 2.5
+    C: -1.5
+
+causal_graph:
+  method: "pc"
+  significance_level: 0.05
+  max_cond_vars: 3
+
+causal_model:
+  estimator: "econml_dml"
+  treatment: "reactor_temp"
+  outcome: "product_yield"
+  common_causes:
+    - "catalyst_type"
+    - "coolant_flow_rate"
+    - "ph_level"
+  effect_modifiers:
+    - "catalyst_type"
+
+detection:
+  isolation_forest_contamination: 0.05
+  cusum_threshold: 5.0
+  cusum_drift: 0.5
+  window_size: 20
+
+control:
+  target_product_yield: 87.0
+  target_tolerance: 1.0
+  max_temp_adjustment: 5.0
+  max_cooling_adjustment: 10.0
+
+serving:
+  host: "127.0.0.1"
+  port: 8000

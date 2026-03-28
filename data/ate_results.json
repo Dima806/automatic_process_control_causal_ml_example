@@ -1,0 +1,26 @@
+{
+  "estimator": "econml_dml",
+  "treatment": "reactor_temp",
+  "outcome": "product_yield",
+  "ate": 0.1638677918679628,
+  "interaction_effects": [
+    {
+      "catalyst_type": "A",
+      "mean_cate": 0.16090785918006817,
+      "std_cate": 2.7755575615628914e-17,
+      "n_obs": 18914
+    },
+    {
+      "catalyst_type": "B",
+      "mean_cate": 0.17936637801205085,
+      "std_cate": 0.0,
+      "n_obs": 16728
+    },
+    {
+      "catalyst_type": "C",
+      "mean_cate": 0.1491486070481085,
+      "std_cate": 2.7755575615628914e-17,
+      "n_obs": 11892
+    }
+  ]
+}
