@@ -22,12 +22,10 @@ jobs:
         run: uv python install 3.11
 
       - name: Install dependencies
-        run: uv sync --extra dev
+        run: make install
 
       - name: Lint
-        run: |
-          uv run ruff check src/ tests/
-          uv run mypy src/
+        run: make lint
 
       - name: Test
-        run: uv run pytest tests/ -v --cov=src/process_control_causal_ml --cov-report=term-missing
+        run: make test
